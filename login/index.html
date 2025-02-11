@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+    }
+    .login-container {
+        background: white;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 250px;
+        text-align: center;
+    }
+    .login-container h2 {
+        margin-bottom: 1rem;
+    }
+    .input-group {
+        margin-bottom: 1rem;
+        text-align: left;
+    }
+    .input-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 2px;
+    }
+    .input-group input {
+        width: 95%;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    .btn {
+        width: 100%;
+        padding: 10px;
+        background: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background: #0056b3;
+    }
+    .error {
+        color: red;
+        font-size: 0.9rem;
+        margin-top: 5px;
+    }
+</style>
+</head>
+<body>
+<div class="login-container">
+    <h2>Login</h2>
+    <form action="login.php" method="post">
+        <div class="input-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Login">
+    </form>
+</body>
+</html>
